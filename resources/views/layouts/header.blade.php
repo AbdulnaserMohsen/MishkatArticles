@@ -61,7 +61,6 @@
 								@endif
 								<a href="#" class="dropdown-toggle d-block " data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="profile-dropdown"><i class="fas fa-user-alt"></i></a>
 								<div class="dropdown-menu  text-center" aria-labelledby="profile-dropdown" >
-									<a class="dropdown-item" href="profile.html" > profile <i class="fas fa-user-circle"></i></a>
 									<a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
 	                  document.getElementById('logout-form').submit();">
 										 logout <i class="fas fa-sign-out-alt"></i>
