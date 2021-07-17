@@ -16,15 +16,13 @@ class ArticleController extends Controller
     public function index()
     {
       $articles = Article::paginate(10);
-      $categories = Category::all();
-      return view('index',compact('articles','categories'));
+      return view('index',compact('articles'));
     }
 
     function articles()
     {
       $articles = Article::paginate(10);
-      $categories = Category::all();
-      return view('admin.articles',compact('articles','categories'));
+      return view('admin.articles',compact('articles'));
     }
 
     protected function validator(array $data)
@@ -79,6 +77,10 @@ class ArticleController extends Controller
         $photo = $article->image;
         if ($request->file("image"))
         {
+            if (file_exists(public_path($article->image)))
+            {
+                unlink(public_path($article->image));
+            }
             $file = $request->file("image");
             $filename = Str::random(6) . '_' . time() . '_' . $file->getClientOriginalName();
             $path = 'images/ArticleImages';
@@ -147,7 +149,6 @@ class ArticleController extends Controller
         }
         else
         {
-          $categories = Category::all();
           return view('index',compact('articles','categories','wordForSearch'));
         }
 

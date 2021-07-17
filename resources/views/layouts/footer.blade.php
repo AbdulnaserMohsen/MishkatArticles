@@ -3,10 +3,11 @@
 
 		<!-- footer -->
 		<footer class="container-fluid footer text-md-start text-center ">
-			<div class="row  row-cols-md-4 row-cols-sm-2 row-cols-1">
+			<div class="row  row-cols-md-3 row-cols-sm-2 row-cols-1">
+
 				<div class="my-5">
 					<h3 class="custom-text-main">About Us</h3>
-					<p class="text-dark">Egyption Compnay for selling all types of finshing trackle ....</p>
+					<p class="text-dark">A lot of important articles here</p>
 					<p class="text-dark">You can find us with visiting one of our  branches or contact us remotely in:</p>
 					<a href="#" class=""><i class="social fab fa-twitter"></i></a>
 					<a href="#" class=""><i class="social fab fa-google-plus-g"></i></a>
@@ -22,27 +23,20 @@
 				<div class="my-5">
 					<h3 class="custom-text-main">Branches </h3>
 					<div class="row">
-							<img class="img-fluid" src="images/default/company photo.jpg" alt=""/>
-							<a class="text-dark d-block" href="https://goo.gl/maps/oDG1ptmK5DFUAanF9" target="_blank">
-								<i class="social fas fa-map-marker-alt"></i> Alexandria, Egypt.
+							<a class="text-dark d-block" href="https://goo.gl/maps/7WSRtdectDsKfime8" target="_blank">
+								<i class="social fas fa-map-marker-alt"></i> Cairo, Egypt.
 							</a>
 							<p class="text-dark" ><i class="social fas fa-mobile-alt"></i> +0201700000000</p>
 					</div>
 				</div>
 
 				<div class="my-5">
-					<h3 class="custom-text-main">Classifications</h3>
-					<a href="brands.html" class="text-dark d-block">Brands <i class="social fab fa-buysellads"></i></a>
-					<a href="categories.html" class="text-dark d-block">Categories <i class="social fas fa-layer-group"></i></a>
+					<h3 class="custom-text-main">Categories</h3>
+					@foreach($categories as $category)
+							<p class="text-dark">{{$category->name}}</p>
+					@endforeach
 				</div>
 
-				<div class="my-5">
-					<h3 class="custom-text-main">Services</h3>
-					<a href="profile.html" class="text-dark d-block">My Account <i class="social far fa-id-card"></i></a>
-					<a href="profile.html" class="text-dark d-block">My Cart <i class="social fas fa-shopping-cart"></i></a>
-					<a href="profile.html" class="text-dark d-block">My Favourites <i class="social fas fa-heart"></i></a>
-					<a href="profile.html" class="text-dark d-block">My Bills <i class="social far fa-clipboard"></i></a>
-				</div>
 			</div>
 		</footer>
 		<!-- end of footer -->

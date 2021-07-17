@@ -180,7 +180,7 @@
                                     @csrf
                                     <div class="mb-3 text-start">
         			                          <label class="col-form-label d-block" >Image <i class="far fa-image"  ></i></label>
-                                        <label for="article-image$article->id" class="d-block border border-2 " >
+                                        <label for="article-image{{$article->id}}" class="d-block border border-2 " >
                               							<!-- <div class="text-end" >
                               								@if(isset($cart_found->image))
                                                   <a href="{{route('remove_print_img',[$cart_found->id])}}" type="button" class="btn custom-close remove-image" data-bs-toggle="tooltip" data-bs-placement="top" title="Remove Image">
@@ -190,7 +190,7 @@
                                             </div> -->
                                             <img  src="{{URL::asset($article->image)}}" class="card-img img-fluid article-image" alt="...">
         	                              </label>
-                                        <input id="article-image$article->id" class="form-control boat-border-left d-none input-image" type="file" name="image" placeholder="article.png" pattern="/\.(jpe?g|png|gif|bmp)$/i" title="Image must have extension jpg, jpeg, png, gif, bmp" accept="image/x-png,image/gif,image/jpeg,image/jpg,image/bmp" value="{{$article->image}}" >
+                                        <input id="article-image{{$article->id}}" class="form-control boat-border-left d-none input-image" type="file" name="image" placeholder="article.png" pattern="/\.(jpe?g|png|gif|bmp)$/i" title="Image must have extension jpg, jpeg, png, gif, bmp" accept="image/x-png,image/gif,image/jpeg,image/jpg,image/bmp" value="{{$article->image}}" >
                                         <div class="invalid-feedback ms-3">
                                             <strong>
                                               Image must have extension jpg, jpeg, png, gif, bmp
@@ -199,8 +199,8 @@
                                    </div>
 
                                     <div class="mb-4">
-                                        <label for="title$article->id" class="col-form-label">Title <i class="fas fa-file-signature"></i></label>
-                                        <input id="title$article->id" class="form-control rounded-pill" type="text" name="title"
+                                        <label for="title{{$article->id}}" class="col-form-label">Title <i class="fas fa-file-signature"></i></label>
+                                        <input id="title{{$article->id}}" class="form-control rounded-pill" type="text" name="title"
                                                placeholder="title " pattern="^([a-zA-Z0-9\-_,\.:\/\(\)& ]{3,})+$"
                                                title="Title must be in English character only, numbers and characters(- , _ : () / & .) and at least 3 characters "
                                                autocomplete="on" required value="{{$article->title}}">
@@ -215,8 +215,8 @@
                                     </div>
 
                                     <div class="mb-4 ">
-                                        <label for="content$article->id" class="col-form-label">Content <i class="fas fa-scroll"></i></label>
-                                        <textarea id="content$article->id" style="width: 100%;"class="nicinstance"  name="content" placeholder="Our article talk about ..." title="Content is required" rows="4" cols="50" autocomplete="on" required >{{$article->content}}</textarea>
+                                        <label for="content{{$article->id}}" class="col-form-label">Content <i class="fas fa-scroll"></i></label>
+                                        <textarea id="content{{$article->id}}" style="width: 100%;"class="nicinstance"  name="content" placeholder="Our article talk about ..." title="Content is required" rows="4" cols="50" autocomplete="on" required >{{$article->content}}</textarea>
                                         <div class="invalid-feedback ms-3">
                                             @error('content')
                                               <strong>{{ $message }}</strong>
@@ -228,10 +228,10 @@
                                     </div>
 
                                     <div class="mb-4">
-                                      <label for="category$article->id" class="col-form-label boat-border-left">
+                                      <label for="category{{$article->id}}" class="col-form-label boat-border-left">
                                           Category <i class="fab fa-buysellads"></i>
                                       </label>
-                                      <select id="category$article->id" class="form-select rounded-pill" name="category" required>
+                                      <select id="category{{$article->id}}" class="form-select rounded-pill" name="category" required>
                                           <option value="">Select Category</option>
                                           @foreach($categories as $category)
                                               <option value="{{$category->id}}" @if($article->category_id == $category->id) selected @endif>{{$category->name}}</option>
