@@ -11,3 +11,6 @@ then download .env file from here: https://github.com/laravel/laravel/blob/maste
 then: back to CMD and type: php artisan key:generate
 then:back to .env file and change DB_DATABASE=laravel to DB_DATABASE=meshkat_articles
 then: php artisan serve
+
+
+use email: admin@admin.com and password: 123456789 to login as admin
