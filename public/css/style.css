@@ -1,0 +1,486 @@
+:root {
+	--main-color:#3a0965;
+	--main-color-hover:#B76BF2;
+	--second-color:#804AA9;
+	--second-color-hover:#B28FCE;
+}
+
+/** anchors **/
+a{
+	text-decoration:none;
+}
+
+/** buttons **/
+.second-btn{
+	border-bottom-left-radius: 25rem;
+	border-top-right-radius: 25rem;
+	color: white !important;
+	background-color: var(--second-color) !important;
+	padding: 0 1rem;
+}
+.second-btn:hover{
+	background-color: var(--second-color-hover) !important;
+}
+.main-btn{
+	color: white !important;
+	background-color: var(--main-color) !important;
+	padding: .5rem 2.5rem;
+}
+.main-btn:hover{
+	background-color: var(--main-color-hover) !important;
+}
+
+.custom-close{
+	color:#D32F2F;
+	font-size: 18px;
+}
+.custom-close:hover{
+	color:#EF5350;
+}
+/* custom text */
+.custom-text-main{
+	color:var(--main-color);
+	font-family: 'Orbitron', sans-serif;
+}
+.custom-text-main-hover{
+	color:var(--main-color-hover);
+	font-family: 'Orbitron', sans-serif;
+}
+
+.custom-text-second{
+	color:var(--second-color);
+	font-family: 'Orbitron', sans-serif;
+}
+.custom-text-second-hover{
+	color:var(--second-color-hover);
+	font-family: 'Orbitron', sans-serif;
+}
+.text-justify{
+	margin: 0;
+	text-indent: 2rem;
+	text-align: justify;
+}
+/* end custom text */
+
+/*** custom background ***/
+.bg-main{
+	background-color: var(--main-color);
+}
+.bg-second{
+	background-color: var(--second-color);
+}
+.bg-main-outline{
+	background-color: white;
+	border: 2px solid var(--main-color);
+	color: var(--main-color);
+}
+.bg-second-outline{
+	background-color: white;
+	border: 2px solid var(--second-color);
+	color: var(--second-color);
+}
+
+/*** end custom background ***/
+
+/*** custom colors ***/
+.currency{
+	color:#43a047;
+}
+.main-color{
+	color: var(--main-color);
+}
+.main-color-hover{
+	color: var(--main-color-hover);
+}
+.second-color{
+	color: var(--second-color);
+}
+.second-color-hover{
+	color: var(--second-color-hover);
+}
+/*** end custom colors ***/
+
+/** custom border **/
+.boat-border-left{
+	border-bottom-left-radius: 25rem;
+	border-top-right-radius: 25rem;
+}
+.boat-border-right{
+	border-top-left-radius: 25rem;
+	border-bottom-right-radius: 25rem;
+}
+/** end custom border **/
+
+/** navbars **/
+
+.navbar-toggler{
+	color: var(--main-color);
+	background-color: white;
+}
+
+	/** header **/
+	header {
+		background: white;
+		border-bottom: solid 2px var(--second-color);
+	}
+	header img{
+		width:13vw;
+		height: 10vw;
+	}
+
+	header .middle-header  a{
+		color:var(--main-color);
+	}
+	header .middle-header a:hover{
+		color:var(--main-color-hover);
+	}
+	header .middle-header a.active{
+		color:var(--second-color-hover);
+	}
+	.search{
+		color:var(--main-color);
+		border-color: #ced4da;
+	}
+	.search:hover{
+		background-color:var(--main-color);
+		color:white;
+	}
+
+	header .badge{
+		font-size: .6rem;
+		background-color:var(--main-color);
+		padding: 0 5px;
+	  vertical-align: top;
+	  margin-left: -5px;
+	}
+	header .middle-header a:hover .badge{
+		background-color:var(--main-color-hover);
+	}
+
+	header nav{
+		background-color:var(--main-color);
+	}
+	header nav a{
+			color:white;
+	}
+	header nav a:hover{
+		background-color:var(--second-color-hover);
+		color:white;
+
+	}
+	header nav a.active{
+		background-color:var(--second-color);
+		color:white;
+	}
+	/**** end header ****/
+/**** navbar ****/
+
+/***** banner (carsouel) *****/
+
+.carousel-indicators [data-bs-target]{
+	width: 8vw;
+}
+.carousel-indicators img {
+	height: 4vw;
+}
+.carousel-item img{
+	height: 40vw;
+	background-position: center;
+	background-size: cover;
+}
+
+.overlay {
+	position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+}
+.custom-caption{
+	margin-bottom: 15vw;
+	font-family: 'Satisfy', cursive;
+	color:white;
+}
+.carousel-control-next , .carousel-control-prev{
+	color: var(--main-color);
+	font-size: 24px;
+}
+.carousel-control-next:hover , .carousel-control-prev:hover,.carousel-control-next:focus, .carousel-control-prev:focus{
+	color: var(--main-color-hover);
+}
+/***** end banner (carsouel) *****/
+
+/*** some products (products of main page) ***/
+.special-products-container{
+	margin: 100px 0px;
+}
+.card:hover{
+	border-color: var(--main-color);
+}
+.product-image-container{
+	height: 15rem;
+}
+.product-image-container img{
+	height: 14rem;
+	transition: transform .5s ease;
+}
+.detail-image{
+	height: 40vw;
+	width: 100%;
+}
+
+a.second-color:hover{
+	color: var(--second-color-hover);
+}
+img.brand-image{
+	height: 5rem;
+	width: 10rem;
+}
+.fa-star, .fa-star-half-alt, .rating{
+	color: #FF6F00;
+}
+.fa-heart{
+	color: #E53935;
+}
+.not-stretched{
+	z-index:3;
+	position:relative;
+}
+	/** cutomise slick **/
+	.slick-slider {
+	    margin:0 -15px;
+	}
+	.slick-slide {
+	    padding:10px;
+	    text-align:center;
+	    margin-right:15px;
+	    margin-left:15px;
+	}
+	.slick-prev{
+		left: -3px;
+		z-index: 100;
+	}
+	.slick-next{
+		right: -3px;
+		z-index: 100;
+	}
+	.slick-prev:before {
+		  content: "\f137";
+			font-family: "Font Awesome 5 Free";
+		  color: var(--main-color);
+			font-weight: 900;
+		}
+		.slick-next:before {
+			content: "\f138";
+			font-family: "Font Awesome 5 Free";
+		  color: var(--main-color);
+			font-weight: 900;
+		}
+/*** end some products (products of main page) ***/
+
+/*** footer ***/
+.footer{
+	background-color: white;
+	color: var(--second-color);
+	border-top: 10px solid  var(--second-color);
+	border-bottom: 5px solid  var(--main-color);
+}
+.social{
+	color:var(--main-color);
+	font-size: 20px;
+	padding: 5px 5px;
+}
+*:hover > .social{
+	color:var(--main-color-hover);
+	font-size: 25px;
+}
+/*** end footer ***/
+
+/** Developer section **/
+
+.developer-header{
+	font-family: 'Satisfy', cursive;
+	color:var(--second-color);
+}
+.developer-social{
+	color:var(--second-color);
+	font-size: 25px;
+	padding: 5px 5px;
+}
+*:hover > .developer-social{
+	color:var(--main-color-hover);
+	font-size: 35px;
+}
+/** end Developer section **/
+
+
+/************ login and register page ***********/
+
+/************ end login and register page ***********/
+
+/*** pagination ***/
+.pagination .page-item .page-link{
+	background-color: var(--main-color);
+	color:#fff;
+}
+.pagination .page-item .page-link:hover{
+	background-color: var(--main-color-hover);
+}
+.pagination .page-item.active .page-link{
+	background-color: var(--main-color-hover);
+}
+.pagination .page-item.disabled .page-link{
+	background-color: #BDBDBD;
+}
+/*** end pagination ***/
+
+/*** cart items ***/
+
+.cart-item-image{
+	transition: transform .5s ease;
+}
+.card:hover .cart-item-image {
+  transform: scale(1.2);
+}
+.oval {
+  height: 1rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+.qt {
+	font-size: 19px;
+	line-height: 40px;
+	width: 70px;
+	text-align: center;
+}
+
+.qt-plus, .qt-minus {
+	background: #fcfcfc;
+	border: none;
+	font-size: 20px;
+	font-weight: 300;
+	height: 100%;
+	padding: 0 20px;
+	-webkit-transition: background .2s linear;
+	-moz-transition: background .2s linear;
+	-ms-transition: background .2s linear;
+	-o-transition: background .2s linear;
+	transition: background .2s linear;
+}
+
+.qt-plus:hover, .qt-minus:hover {
+	background: var(--main-color);
+	color: #fff;
+	cursor: pointer;
+}
+
+.qt-plus {
+	line-height: 40px;
+}
+
+.qt-minus {
+	line-height: 40px;
+}
+
+/*** end cart items ***/
+
+/***  custom table ***/
+.table{
+  --bs-table-hover-bg:  #BDBDBD;
+}
+.table-image{
+	height: 5rem;
+	width: 5rem;
+}
+.table {
+  table-layout:fixed;
+}
+
+.table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/**** end custom table ***/
+
+/** custom btn group **/
+.btn-group .btn:first-child{
+	border-bottom-left-radius: 25rem !important;
+}
+.btn-group .btn:last-child{
+	border-top-right-radius: 25rem !important;
+}
+/** end of coustom btn group **/
+
+/*** rating inputs **/
+ .input-rating .stars {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.input-rating .stars input[type="radio"] {
+  display: none;
+}
+
+.input-rating .stars>label {
+	float: right;
+  cursor: pointer;
+  padding: 0px 3px;
+  margin: 0px;
+}
+
+.input-rating .stars>label:before {
+  content: "\f005";
+  font-family: FontAwesome;
+  color: #E4E7ED;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.input-rating .stars>label:hover:before, .input-rating .stars>label:hover~label:before {
+  color: #FF6F00;
+}
+
+.input-rating .stars>input:checked label:before, .input-rating .stars>input:checked~label:before {
+  content: "\f005";
+  color: #FF6F00;
+}
+/*** end of rating inputs ***/
+
+/** comment card **/
+.custom-card{
+    background: #fff;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+		border: 1px solid var(--main-color);;
+}
+.custom-card-body{
+	padding: 1rem 1rem;
+}
+.custom-card .custom-card-header{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.03);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    font-weight: 700;
+    line-height: 40px;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+.blockquote-footer{
+	color: #fff;
+	background-color: gray;
+}
+/*** end of comment card ***/
+
+/** begin of article image **/
+.article-image{
+	height: 25vw;
+	cursor: pointer;
+	width:100%;
+}
+/*** end of article image ***/
