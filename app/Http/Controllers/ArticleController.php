@@ -149,7 +149,7 @@ class ArticleController extends Controller
         }
         else
         {
-          return view('index',compact('articles','categories','wordForSearch'));
+          return view('index',compact('articles','wordForSearch'));
         }
 
     }
